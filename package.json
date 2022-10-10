@@ -12,7 +12,9 @@
   "module": "./dist/widget-creator.module.js",
   "unpkg": "./dist/widget-creator.umd.js", 
   "scripts": {
-    "build": "microbundle"
+    "build": "microbundle",
+    "dev": "node ./src/main.js",
+    "devwatch": "nodemon ./src/main.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,16 @@
   "author": "",
   "license": "ISC",
   "homepage": "",
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "chalk": "^5.0.1",
+    "chokidar": "^3.5.3",
+    "crypto-js": "^4.1.1",
+    "firebase": "^9.9.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "vue-sfc-parser": "^0.1.2"
+  },
   "devDependencies": {
     "microbundle": "^0.15.1"
   }

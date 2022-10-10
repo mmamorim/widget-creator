@@ -1,6 +1,4 @@
 
-const fazAlgo = function() {
-    console.log("oi gente");
-}
+import creator from "./src/creator/creator.js"
 
-export default fazAlgo
+export { creator }
