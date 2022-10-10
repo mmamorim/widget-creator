@@ -1,6 +1,5 @@
 
 import CryptoJS from "crypto-js"
-import AES from "crypto-js/aes.js"
 
 export default function() {
     const key = CryptoJS.enc.Utf8.parse("hf8685nfhfhjs9h8");

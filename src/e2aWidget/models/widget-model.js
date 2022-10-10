@@ -1,5 +1,5 @@
 import { rdb } from "./firebase/firebase.js"
-import { ref, get, onValue, query, set } from "firebase/database";
+import { ref, get, onValue, set } from "firebase/database";
 
 const rdbmode = "dev" //"dev" //"prod"
 const paths = {

@@ -1,3 +1,4 @@
 node_modules
+src/e2aWidget/models/firebase/_config-key.js
 widgets
 gadgets
