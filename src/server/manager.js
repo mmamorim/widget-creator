@@ -19,6 +19,8 @@ const manager = function (userdev) {
                 self.widget.widget_info.prod = false
             }
             let widget_new = self.widget.widget_info
+            widget_new.template = self.widget.template
+            widget_new.script = self.widget.script
             await widget_model.set(self.widget.pathWG, widget_new)
             console.log(`🚀 widget ${self.widget.infoLog()} versão ${widget_new.version} PUBLICADA!`);
             await widget_model.set(self.widget.pathWGUser, widget_new.namespace + '/' + widget_new.id)

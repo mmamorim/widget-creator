@@ -14,7 +14,8 @@
   "scripts": {
     "build": "microbundle",
     "dev": "node ./src/main.js",
-    "devwatch": "nodemon ./src/main.js"
+    "devwatch": "nodemon ./src/main.js",
+    "clone": "node ./src/clone.js"
   },
   "repository": {
     "type": "git",

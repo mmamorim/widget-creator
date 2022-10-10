@@ -4,7 +4,7 @@ import server from "../server/server.js"
 const creator = {
     prefix: '',
     user_dev: '',
-    setConfig: false,
+    set_config: false,
     config: undefined,
 
     setPrefix(prefix) {
@@ -21,7 +21,7 @@ const creator = {
     },
 
     setConfig(config) {
-        creator.setConfig = true
+        creator.set_config = true
         if(!creator.missingField(config.user_dev,'user_dev','config.json')) {
             return
         }
@@ -45,7 +45,7 @@ const creator = {
     },
 
     init() {
-        if(!creator.setConfig) {
+        if(!creator.set_config) {
             console.log('🙁 ' + chalk.red.bold(`config não inicializado...`));
             console.log('🤔 ' + chalk.blue(`você chamou setConfig() ?`));
             return
