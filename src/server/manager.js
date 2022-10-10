@@ -27,8 +27,8 @@ const manager = function (userdev) {
         async checkNewVersion() {
             let widget_info = self.widget.widget_info 
             let widget = self.widget.widget_last
-            console.log('widget.commit', widget.commit);
-            console.log('widget_info.commit', widget_info.commit);
+            //console.log('widget.commit', widget.commit);
+            //console.log('widget_info.commit', widget_info.commit);
             if (widget.commit != undefined && widget.commit != widget_info.commit) {
                 console.log('🔥 novo commit ' + chalk.green.bold(`[${widget.id}] [${widget.name}] ${widget_info.commit}`));
                 //let backup_path = 'widgets_backup/' + widget_info.namespace + '/' + widget.id + '/' + widget.version

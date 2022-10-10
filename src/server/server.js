@@ -10,7 +10,7 @@ const server = {
     user_dev: {}, 
 
     init(config) {
-        console.log('config',config);
+        //console.log('config',config);
         server.cfg_widgets = config.widgets_folder
         server.path = server.path + server.cfg_widgets
         server.user_dev = config.user_dev
