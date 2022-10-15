@@ -1,5 +1,6 @@
 import chalk from 'chalk'
-import server from "../server/server.js"
+import server_widgets from "../server/server-widgets.js"
+import server_gadgets from "../server/server-gadgets.js"
 
 const creator = {
     prefix: '',
@@ -51,7 +52,8 @@ const creator = {
             return
         }
         creator.splash()
-        server.init(creator.config)
+        server_widgets.init(creator.config)
+        server_gadgets.init(creator.config)
     }
 }
 

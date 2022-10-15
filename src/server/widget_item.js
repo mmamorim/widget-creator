@@ -107,7 +107,7 @@ const widget_item = async function (data, userdev) {
     self.parse(data)
     if (self.parseOk) {
         self.pathWG = self.pathWG + self.widget_info.namespace + '/' + self.widget_info.id
-        self.pathWGUser = self.pathWGUser + self.userdev.id+'/'+self.widget_info.id
+        self.pathWGUser = self.pathWGUser + self.userdev.id+'/widgets'
         self.pathWGBkp = self.pathWGBkp + self.widget_info.namespace + '/' + self.widget_info.id + '/' + self.widget_info.version
         await self.checkFirstVersion()
     } else {

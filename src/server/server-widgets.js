@@ -2,7 +2,7 @@ import chokidar from 'chokidar'
 import appRoot from 'app-root-path'
 import chalk from 'chalk'
 import { readFileSync } from 'fs'
-import manager from './manager.js'
+import manager from './manager-widgets.js'
 
 const server = {
     cfg_widgets: '',
@@ -49,7 +49,7 @@ const server = {
         let m = manager(server.user_dev) 
         await m.parse(data)
         if(m.widget.parseOk) {
-            console.log('parse ok');
+            //console.log('parse ok');
             //console.log('m.widget',m.widget.widget_info);
             await m.publish_widget()
             console.log('📡 ' + chalk.green.bold(`escutando por widgets na pasta `) + server.cfg_widgets);

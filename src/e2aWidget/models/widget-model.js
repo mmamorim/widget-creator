@@ -6,9 +6,9 @@ const paths = {
     "prod": "/prod/",
     "dev": "/dev/"
 }
-const rdbref = (path) => { 
+const rdbref = (path) => {
     //console.log("acessando...",paths[rdbmode]+path);
-    return ref(rdb,paths[rdbmode]+path) 
+    return ref(rdb, paths[rdbmode] + path)
 }
 
 export default {
@@ -20,14 +20,13 @@ export default {
         return snap.val()
     },
 
-    onValue(path,func) {
+    onValue(path, func) {
         onValue(rdbref(path), (snap) => {
             func(snap.val())
         })
     },
-    
-    async set(path,value) {
-        await set(rdbref(path),value)
-    }
-    
+
+    async set(path, value) {
+        await set(rdbref(path), value)
+    },
 }

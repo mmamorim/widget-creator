@@ -5,12 +5,12 @@
   "source": "index.js",
   "type": "module",
   "exports": {
-    "require": "./dist/widget-creator.cjs",      
-    "default": "./dist/widget-creator.modern.js" 
+    "require": "./dist/widget-creator.cjs",
+    "default": "./dist/widget-creator.modern.js"
   },
   "main": "./dist/widget-creator.cjs",
   "module": "./dist/widget-creator.module.js",
-  "unpkg": "./dist/widget-creator.umd.js", 
+  "unpkg": "./dist/widget-creator.umd.js",
   "scripts": {
     "build": "microbundle",
     "dev": "node ./src/main.js",
@@ -30,9 +30,10 @@
     "chalk": "^5.0.1",
     "chokidar": "^3.5.3",
     "crypto-js": "^4.1.1",
-    "firebase": "^9.9.2",
+    "firebase": "^9.12.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
+    "sharp": "^0.31.1",
     "vue-sfc-parser": "^0.1.2"
   },
   "devDependencies": {
